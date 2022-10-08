@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      <!-- 탭의 제목 부분-->
+      나의 첫 symantic 페이지
+      <meta name="viewport" content="width=device-width, initial scale=1.0">
+      <meta naem="title" content="나의 첫 Symantic 페이지">
+      <meta property="og:title" content="나의 첫 Symantic 페이지">
+    </title>
+  </head>
+  <body>
+    <header>
+      <!-- logo, nav, search  -->
+      <nav id="main-menu">
+        <!-- id 속성은 문서에서 유일해야한다-->
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+        </ul>
+    </header>
+    <main>
+      <section> <!--소주제를 나누는것-->
+    <h1>
+      <!--h1만 하나만 존재해야한다,절대 빼먹으면 안됨 / h2부터는 순차적으로 작성만 해주면 중복되어도 상관없음-->
+      기사의 메인 타이틀
+    </h1>
+    <p>
+      paragraph태그로 기사의 본문을 쓸 수 있습니다.
+    </p>  
+      </section>
+    <section>
+    <!-- section을 나눌때는 각 안에 나누는 제목이 들어가 있어야한다.-->
+      <h2>
+        어른폰 가격 변동 추이
+      </h2>
+      <p>
+        어른폰은 2008년 출시 이후 꾸준히 가격이 상승해왔다... 
+      </p>
+      <!--article 로 article을 묶을수 있다--> 
+    </section>
+    <section class="faq">
+      <h2>자주 묻는 질문</h2>
+      <details>
+        <summary>Q. 어른폰은 언제 사야 하나요? </summary> <!--펼쳐지지 전 값-->
+        <span>A. 당장이요 </span> <!-- 펼쳐지고 난 값 -->
+      </details>
+      <details>
+        <summary>Q. 통신사는 자유롭나요? </summary>
+        <span>A. 넵 </span>
+      </details>
+    </section>
+    <table>
+      <caption>  표1. 중간고사 성적표 </caption>
+    </table>
+    <table> <!--한 가로줄을 만들고 데이터를 나열해야한다 순서를 바꾸어도 head body foot 순서로 노출된다 -->
+      <thead>
+        <tr>
+          <th>번호</th>
+          <th>점수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>80</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>평균</td>
+          <td>90</td>
+        </tr>
+      </tfoot>
+    </table>
+    </main>
+    <article>
+      <h2> 당신의 의견을 제출하세요 </h2>
+      <form action="#" method="post">
+        <input type="text" id="opinion" name="opinion">
+      </form>
+    </article>
+      <article id="featured-posts">
+        <article class="featured-posts">
+          <h2>
+            은하 13 출시 임박
+          </h2>
+        </article>
+        <article class="featured-post">
+        </article>
+        <aside>
+          <h2> Featured Comments</h2>
+          <ul>
+            <li> 우와 정말 정보가 많네요 </li>
+            <li> 후속 기사가 기대됩니다. </li>
+          </ul>
+        </aside>
+        <footer>
+          <!-- 부가정보 작성하기 -->
+          <span>
+            copyrights 2020-2022 by kimgwangzzang ALL RIGHT RESERVED.
+          </span>
+        </footer>
+          <h2>
+            어른폰 14 싸게 사는 법
+          </h2>
+    
+  </body>
+</html>
